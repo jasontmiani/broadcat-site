@@ -1,18 +1,14 @@
 {
-  "pro": true,
   "babel": {
-    "presets": ["babel-preset-gatsby", "react"]
+    "ignore": ["node_modules/(?!gatsby)"],
+    "presets": [
+      "babel-preset-gatsby"
+    ]
   },
-  "plugins": [
-    "alias-quokka-plugin",
-    "babel-alias-quokka-plugin",
-    "jsdom-quokka-plugin",
-    "quokka-signet-explorer"
-  ],
-  "alias": { "@": ".", "other-thing": "lib/other/thing" },
-  "env": {
+  "plugins": ["jsdom-quokka-plugin"],
+   "env": {
     "params": {
-      "env": "NODE_PATH=./src"
+      "env": "NODE_ENV=test"
     }
   }
 }
