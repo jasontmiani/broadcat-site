@@ -1,0 +1,18 @@
+{
+  "pro": true,
+  "babel": {
+    "presets": ["babel-preset-gatsby", "react"]
+  },
+  "plugins": [
+    "alias-quokka-plugin",
+    "babel-alias-quokka-plugin",
+    "jsdom-quokka-plugin",
+    "quokka-signet-explorer"
+  ],
+  "alias": { "@": ".", "other-thing": "lib/other/thing" },
+  "env": {
+    "params": {
+      "env": "NODE_PATH=./src"
+    }
+  }
+}
