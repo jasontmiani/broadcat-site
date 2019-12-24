@@ -2,7 +2,7 @@
 author: Jason Miani
 
 
-## webDev Environment Setuo
+## webDev Environment Setup
 
 
 ### vscode
@@ -16,15 +16,15 @@ author: Jason Miani
 
 ### git
 
-[git](https://git-scm.com/)
+install [git](https://git-scm.com/)
 
-install options:
+options:
 
 - add to path
 
 - chocolatey (if win)
 
-- *do recommended settings*
+- *use recommended settings*
 
 
 //NOTE: **vscode has git built in so you dont technically need but i highly recommend
@@ -68,7 +68,9 @@ make a copy of the master branch so that you can break stuff.
 
  > $ git checkout -b some_branch_name
  
+ 
 this duplicated the og branch but just to be sure lets check  
+
 
  > $ git status
  
@@ -96,6 +98,7 @@ looks for package.json file and installs all dependencies
 
 add a project dependency
 
+
 > $ npm install react --save
 
 > $ yarn add react
@@ -105,6 +108,7 @@ add a project dependency
 
  
 adds a dev dependency to the project
+
  
 > $ npm i eslint --save-dev
 
