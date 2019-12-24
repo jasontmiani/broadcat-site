@@ -60,7 +60,11 @@
     "react-share": "^3.0.1",
     "react-twitter-widgets": "^1.7.1",
     "tailwindcss": "^1.1.4",
-    "url-join": "^4.0.0"
+    "url-join": "^4.0.0",
+    "theme-ui": "^0.2.52",
+    "gatsby-plugin-theme-ui",
+    "@emotion/core",
+    "@mdx-js/react"
   },
   "devDependencies": {
     "better-docs": "^1.4.7",
