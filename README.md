@@ -25,6 +25,28 @@
 
 ## Setup Instructions
 
+### nodejs, npm & yarn
+
+1. Install nodejs and NPM aka node package manager
+2. Install Yarn - slightly better version of npm imo
+
+#### **common npm usage examples**
+
+$ npm install
+
+ >looks for package.json file and installs dependencies
+
+$ npm install --global npm
+
+ > installs a package globally
+ 
+$ npx create-react-app my-app
+
+ > 
+ 
+
+
+
 1. Install [Visual Studio Code](https://code.visualstudio.com/) --> slightly different than Visual Studio. VSCode's extension library is massive. I'll send you my list.
 
 2. Create a Github account && setup global git configuration [Git Tutorial & git config --global](https://www.atlassian.com/git/tutorials)
