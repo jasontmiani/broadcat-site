@@ -339,7 +339,7 @@
   "remote.SSH.configFile": "C:\\ProgramData\\ssh\\ssh_config",
   "workbench.sideBar.location": "right",
   "git.autofetch": true,
-  "workbench.colorTheme": "Overwatch",
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
   "gitlens.views.compare.files.layout": "tree",
   "workbench.activityBar.visible": true,
   "typescript.format.enable": true,
