@@ -6479,12 +6479,12 @@ gatsby-plugin-tailwindcss@^1.0.3:
   dependencies:
     babel-plugin-tailwind-components "^0.5.10"
 
-gatsby-plugin-twitter@^2.1.9:
-  version "2.1.12"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.1.12.tgz#4d75c6ed79e66dd3ec49658a67a6fb77aba694bd"
-  integrity sha512-PsNa8x6qnVzjOo1icWn2SUIOvQceIxHvUXKQzSkZtC7MUUVuI4pTuv3q5x9F3NlV08z6bP0Q8l0DhbYrjQ03uQ==
+gatsby-plugin-twitter@^2.1.17:
+  version "2.1.17"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.1.17.tgz#88292ed3212ca589b850d11b75721142db7fbcb9"
+  integrity sha512-rf9raVXzpLmMfM518F5vaC9yLL+rCZrrO9cG8Xub6Xsz1QrMmkuZgRCwhM4kXODr69OJkLNpJdEm6cgrb2+kWQ==
   dependencies:
-    "@babel/runtime" "^7.6.3"
+    "@babel/runtime" "^7.7.6"
 
 gatsby-react-router-scroll@^2.1.19:
   version "2.1.19"
