@@ -1,5 +1,9 @@
 {
-  "cSpell.words": ["jasontmiani", "netlifycms"],
+  "cSpell.words": [
+    "jasontmiani",
+    "netlifycms",
+    "tailwindcss"
+  ],
   "remote.downloadExtensionsLocally": true,
   "problems.showCurrentInStatus": true,
   "search.quickOpen.includeSymbols": true,
@@ -364,7 +368,7 @@
   "editor.fontFamily": "Cascadia Code",
   "editor.links": true,
   "vsonline.planFilter": "/subscriptions/9932450a-5d5d-423a-b367-577dadf9fb1b/resourceGroups/vso-rg-2674d7c/providers/Microsoft.VSOnline/plans/vso-plan-westus2",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "typescript.check.npmIsInstalled": true,
   "typescript.suggest.includeAutomaticOptionalChainCompletions": true,
   "editor.multiCursorModifier": "ctrlCmd",

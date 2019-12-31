@@ -1,11 +1,14 @@
 import React, { Component } from "react";
+import ReactDOM from 'react-dom '
 import Helmet from "react-helmet";
 import Layout from "../layout";
 import About from "../components/About/About";
 import config from "../../data/SiteConfig";
 
-class AboutPage extends Component {
-  render() {
+
+
+function AboutPage(props) {
+  
     return (
       <Layout>
         <div className="about-container">
@@ -14,7 +17,9 @@ class AboutPage extends Component {
         </div>
       </Layout>
     );
-  }
 }
 
 export default AboutPage;
+
+
+
