@@ -6391,12 +6391,12 @@ gatsby-plugin-netlify-cms@^4.1.22:
     netlify-identity-widget "^1.5.5"
     webpack "^4.41.1"
 
-gatsby-plugin-nprogress@^2.1.9:
-  version "2.1.12"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-2.1.12.tgz#70e3f8be65fc55ee29772927763dc067b712e8b9"
-  integrity sha512-UNYOQ7HnbUTpC964ElXFsFI50/CLEj9+o0zeZOj5HtbcpAtLZD/kT4R23noazW+L4Q3Q0/gPFT1CHfd8ewlBQA==
+gatsby-plugin-nprogress@^2.1.17:
+  version "2.1.17"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-2.1.17.tgz#81dd4f100c3f6beb84bb0d1cae4300351a8bc4a0"
+  integrity sha512-ZUQQ12mVHHhtR3VnIug8bWJLbuXDtB1gmqFzkTWxv+frcdIfqQjbXyDJdGgT79zBsSPeOQADy+w5FYnfiAZOCw==
   dependencies:
-    "@babel/runtime" "^7.6.3"
+    "@babel/runtime" "^7.7.6"
     nprogress "^0.2.0"
 
 gatsby-plugin-offline@^3.0.30:
