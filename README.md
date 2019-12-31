@@ -1,5 +1,158 @@
 # broadcat-site
+author: Jason Miani
 
+
+## webDev Environment Setup
+
+
+### vscode
+
+
+- Install [Visual Studio Code](https://code.visualstudio.com/)
+
+--> slightly different than Visual Studio. VSCode's extension library is massive. I'll send you my list.
+
+
+
+### git
+
+install [git](https://git-scm.com/)
+
+options:
+
+- add to path
+
+- chocolatey (if win)
+
+- *use recommended settings*
+
+
+//NOTE: **vscode has git built in so you dont technically need but i highly recommend
+
+
+**setup global git config** 
+
+[Git Tutorial & git config --global](https://www.atlassian.com/git/tutorials)
+
+
+
+### nodejs, npm & yarn
+
+- install [node](https://nodejs.org/en/) 
+
+ > python-based javascript runtime
+ 
+ **use lts or current**
+
+- install npm [npm aka node package manager](https://www.npmjs.com/)
+
+  > npm is the redhot sauce of javascript. it does everything
+
+- install [yarn](https://yarnpkg.com/lang/en/)
+
+ > this extends from npm and has same functionality as npm. required for many installs. its faster, easer to use, less security risks  **did i mention easier to use?**
+ 
+ 
+ 
+## Getting Started
+
+
+clone the github repo
+
+
+ > $ git clone https://github.com/jasontmiani/broadcat-site.git
+ 
+
+make a copy of the master branch so that you can break stuff. 
+
+
+ > $ git checkout -b some_branch_name
+ 
+ 
+this duplicated the og branch but just to be sure lets check  
+
+
+ > $ git status
+ 
+
+commit changes
+
+ > $ git commit -m "insert message"
+ 
+ 
+ ill show you rest later. theres also info listed below
+ 
+
+
+#### **common npm/yarn usage examples**
+
+
+looks for package.json file and installs all dependencies
+
+> $ npm install
+
+> $ yarn
+
+> $ yarn install
+
+
+add a project dependency
+
+
+> $ npm install react --save
+
+> $ yarn add react
+
+> $ yarn install react
+
+
+ 
+adds a dev dependency to the project
+
+ 
+> $ npm i eslint --save-dev
+
+> $ yarn add eslint --dev
+
+
+
+install a package globally
+
+ 
+> $ npm install --global gatsby-cli
+
+> $ yarn add --global gatsby-cli
+
+> $ yarn install --global gatsby-cli
+
+
+**npx** (works with yarn & npm)
+
+
+creates a temporary react project bundled **probs wont use this**
+
+
+> $ npx create-react-app my-app
+
+ 
+**npm scripts**
+
+*** each package.json file in workspace "/" has a scripts list so its important to read these ***
+
+here's the most common script listed in package.json
+
+here's how to start gatsby in dev mode lol
+
+
+> $ npm run-script dev
+
+> $ npm dev
+
+> $ yarn develop
+ 
+
+
+ 
 ## docs & other Links
 
 - [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter)
@@ -15,61 +168,26 @@
 
   1. Statically generated html/css/js --> safe, secure, & fast af at very low cost <= \$1 per site (at scale of like 20+ sites; initially free.)
   2. ReactJS for component modularity/flexibility. Dozens of design systems work with react --> in most instances we won't have to build components or configure css.
+  
   3. GraphQL --> an alternative integration method to an API. ideal for SSGens.
+  
   4. Gatsby plugins - preconfigured to do almost anything see [Gatsby Plugins](https://www.gatsbyjs.org/plugins/)
 
 - [ReactJS Documentation](https://reactjs.org/docs/hooks-intro.html)
 
   - I linked the **hooks** _functional reactjs components_ documentation. React will stop using class-based components moving forward and working with functions is much easier IMO.
+  
   - I'll show you how to use react via the Example.js component. Inline comments for dev tutorial. It's not that complicated and allows us to use design systems so we'll mostly have to think about integrating stuff not writing HTML/CSS
+ 
 
-## Setup Instructions
 
-1. Install [Visual Studio Code](https://code.visualstudio.com/) --> slightly different than Visual Studio. VSCode's extension library is massive. I'll send you my list.
 
-2. Create a Github account && setup global git configuration [Git Tutorial & git config --global](https://www.atlassian.com/git/tutorials)
-
-3. ```git clone https://github.com/jasontmiani/broadcat-site.git
-
-   ```
-
-4. Follow setup instructions below!
 
 ---
 
-<div align="center" style="margin-bottom:30px">
-    <a href='https://github.com/vagr9k/gatsby-advanced-starter/blob/master/LICENSE'>
-    <img src="https://img.shields.io/github/license/vagr9k/gatsby-advanced-starter.svg" alt="Logo" />
-    </a>
-    <a href='https://github.com/vagr9k/gatsby-advanced-starter'>
-    <img src="https://img.shields.io/github/tag/vagr9k/gatsby-advanced-starter.svg" alt="Logo" />
-    </a>
-        <a href='https://github.com/vagr9k/gatsby-advanced-starter/stargazers'>
-    <img src="https://img.shields.io/github/stars/vagr9k/gatsby-advanced-starter.svg" alt="Logo" />
-    </a>
-        <a href="https://twitter.com/intent/tweet?text=A%20cool%20%40gatsbyjs%20starter%3A&url=https%3A%2F%2Fgithub.com%2FVagr9K%2Fgatsby-advanced-starter">
-    <img src="https://img.shields.io/twitter/url/https/github.com/vagr9k/gatsby-advanced-starter.svg?style=social" alt="Logo" />
-    </a>
-</div>
+## Original starter project
 
-<div align="center"  style="margin-bottom:30px">
-    <img src="static/logos/logo-1024.png" alt="Logo" width='200px' height='200px'/>
-</div>
-
-<div align="center">
-    <a href="https://codeclimate.com/github/Vagr9K/gatsby-advanced-starter">
-      <img src="https://codeclimate.com/github/Vagr9K/gatsby-advanced-starter/badges/gpa.svg" alt="Logo" />
-    </a>
-    <a href='https://codeclimate.com/github/Vagr9K/gatsby-advanced-starter'>
-      <img src="https://codeclimate.com/github/Vagr9K/gatsby-advanced-starter/badges/issue_count.svg" alt="Logo" />
-    </a>
-    <a href='https://www.codacy.com/app/Vagr9K/gatsby-advanced-starter?utm_source=github.com&utm_medium=referral&utm_content=Vagr9K/gatsby-advanced-starter&utm_campaign=Badge_Grade'>
-      <img src="https://api.codacy.com/project/badge/Grade/990fb54ea8094f2aa0ed77f14e859820" alt="Logo" />
-    </a>
-    <a href='https://github.com/prettier/prettier'>
-      <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="Logo" />
-    </a>
-</div>
+i already modified tons of packages and added quokkajs
 
 # Gatsby Advanced Starter
 
@@ -156,25 +274,7 @@ If you are interested in a foundation for building ultra-fast websites, you can 
 
 NOTE: Feel free to check out [Gatsby Material Starter](https://github.com/Vagr9K/gatsby-material-starter) if you are interested in a more opinionated starter with Material Design in mind.
 
-## Getting Started
 
-Install this starter (assuming [Gatsby](https://github.com/gatsbyjs/gatsby/) is installed and updated) by running from your CLI:
-
-```sh
-gatsby new YourProjectName https://github.com/Vagr9K/gatsby-advanced-starter
-npm run develop # or gatsby develop
-```
-
-Or you can fork the project, make your changes there and merge new features when needed.
-
-Alternatively:
-
-```sh
-git clone https://github.com/Vagr9K/gatsby-advanced-starter YourProjectName # Clone the project
-cd YourProjectname
-rm -rf .git # So you can have your own changes stored in VCS.
-npm install # or yarn install
-npm run develop # or gatsby develop
 ```
 
 ## Configuration
