@@ -1,0 +1,14 @@
+{
+  "name": "broadcat",
+  "private": true,
+  "author": {
+    "name": "Jason Miani",
+    "email": "jasontmiani@gmail.com"
+  },
+  "homepage": "https://jasontmiani.me",
+  "workspaces": [
+    "broadcat-site",
+    "packages",
+    "themes"
+  ]
+}
