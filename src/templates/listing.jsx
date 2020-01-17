@@ -58,7 +58,7 @@ export default Listing;
 export const listingQuery = graphql`
   query ListingQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      sort: { fields: [fields___date], order: DESC }
+      sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip
     ) {
@@ -66,7 +66,6 @@ export const listingQuery = graphql`
         node {
           fields {
             slug
-            date
           }
           excerpt
           timeToRead
@@ -75,6 +74,7 @@ export const listingQuery = graphql`
             tags
             cover
             date
+            category
           }
         }
       }
