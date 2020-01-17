@@ -1,9 +1,9 @@
 const config = {
   siteTitle: "broadcat website", // Site title.
-  siteTitleShort: "broadcat-site", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "broadcat-template", // Alternative site title for SEO.
+  siteTitleShort: "broadcat site", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleAlt: "broadcat template", // Alternative site title for SEO.
   siteLogo: "/static/logos/lambda-cat.png", // Logo used for SEO and manifest.
-  siteUrl: "https://gatsby-advanced-starter-demo.netlify.com", // Domain of your website without pathPrefix.
+  siteUrl: "https://jasontmiani@gmail.com", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "The marketing site & design template for broadcat.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
@@ -16,8 +16,10 @@ const config = {
   postsPerPage: 4, // Amount of posts displayed per listing page.
   userName: "Kalzad", // Username to display in the author segment.
   userEmail: "jasontmiani@gmail.com", // Email used for RSS feed's author segment
-  userInstagram: "",
-  userTwitter: "",
+  userInstagram: "jasontmiani",
+  userTwitter: "@jasontmiani",
+  twitchUserID: "24409212",
+  twitchClientID: "xrmtyevo2edce45tbw4ipti6a4vcz1",
   // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Los Angeles, CA", // User location to display in the author segment.
   userAvatar:

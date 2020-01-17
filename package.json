@@ -19,6 +19,10 @@
     "format:styles": "prettier '**/*.{css,scss}' --write"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.27",
+    "@mdx-js/react": "^1.5.5",
+    "axios": "^0.19.1",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "gatsby": "^2.18.16",
     "gatsby-image": "^2.2.23",
     "gatsby-plugin-catch-links": "^2.1.12",
@@ -41,22 +45,24 @@
     "gatsby-remark-responsive-iframe": "^2.2.20",
     "gatsby-source-filesystem": "^2.1.28",
     "gatsby-source-instagram": "^0.6.1",
+    "gatsby-source-twitch": "^1.0.2",
     "gatsby-transformer-remark": "^2.6.26",
     "gatsby-transformer-sharp": "^2.2.19",
-    "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "netlify-cms-app": "^2.9.7",
     "prismjs": "^1.16.0",
-    "react": "^16.10.1",
+    "react": "^16.12.0",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.10.1",
     "react-helmet": "^5.2.1",
     "react-share": "^3.0.1",
+    "react-spring": "^8.0.27",
     "react-twitter-widgets": "^1.7.1",
     "tailwindcss": "^1.1.4",
-    "url-join": "^4.0.0",
-    "theme-ui": "^0.2.52"
-    },
+    "theme-ui": "^0.2.52",
+    "typography": "^0.16.19",
+    "url-join": "^4.0.0"
+  },
   "devDependencies": {
     "alias-quokka-plugin": "^0.1.0",
     "babel-alias-quokka-plugin": "^1.0.9",
@@ -80,6 +86,7 @@
   "keywords": [
     "gatsby"
   ],
+  "license": "MIT",
   "main": "n/a",
   "remarkConfig": {
     "plugins": [

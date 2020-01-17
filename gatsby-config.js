@@ -46,13 +46,6 @@ module.exports = {
             }
           },
           {
-            resolve: "@weknow/gatsby-remark-twitch",
-            options: {
-              width: 800,
-              height: 400
-            }
-          },
-          {
             resolve: "gatsby-remark-responsive-iframe"
           },
           "gatsby-remark-copy-linked-files",
@@ -193,6 +186,13 @@ module.exports = {
         type: `user-profile`,
         username: config.userInstagram
       }
-    }
+    },
+     {
+    resolve: `gatsby-source-twitch`,
+    options: {
+      userID: config.twitchUserID,
+      clientID: config.twitchClientID
+    },
+  },
   ]
 };
