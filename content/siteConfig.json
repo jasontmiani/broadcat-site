@@ -1,0 +1,115 @@
+{
+    "siteData": {
+        "metaData": {
+            "title": "broadcat website",
+            "titleShort": "broadcat",
+            "titleAlt": "broadcat template",
+            "logo": "/static/logos/lambda-cat.png",
+            "url": "https://jasontmiani@gmail.com",
+            "pathPrefix": "../src/pages/",
+            "description": "The marketing site & design template for broadcat.",
+            "siteRssPath": "../content/",
+            "googleAnalyticsID": "UA-47311644-5"
+        },
+        "copyright": "Copyright © 2019. Kalzad",
+        "themeColor": "#004972b8",
+        "backgroundColor": "#e0e0e0",
+        "feedSettings": {
+            "postDefaultCategoryID": "Feed",
+            "dateFromFormat": "MM/DD/YY",
+            "dateFormat": "MM/DD/YY",
+            "postsPerPage": 4,
+            //TODO: sortFeed && sortComments. Options to () export
+            "sortFeed": {
+                "options": [
+                    "recent",
+                    "oldest",
+                    "most upvoted",
+                    "most downvoted",
+                    "most shared",
+                    {
+                        "prefer to order by social": {
+                            "socialPreferenceOrderDesc": ["twitch", "instagram"]
+                        }
+                    }
+                ],
+                "active": "recent"
+            },
+            "sortComments": {
+                "options": ["top", "newest", "starred", "upvoted", "downvoted"],
+                "active": "newest"
+            }
+        }
+    },
+    "authorProfile": {
+        "account": {
+            "userName": "Kalzad",
+            "emailAddress": [
+                {
+                    "jasontmiani@gmail.com": {
+                        "type": "primary",
+                        "private": true
+                    }
+                },
+                {
+                    "cswarrior1@g.ucla.edu": {
+                        "type": "secondary",
+                        "private": false
+                    }
+                }
+            ]
+        },
+        "bio": {
+            "firstName": "Jason",
+            "lastName": "Miani",
+            "userLocation": "Los Angeles, CA",
+            "description": "The marketing site & design template for broadcat.",
+            "userIcon": "https:github.com/jasontmiani/broadcat-site/blob/master/static/logos/lambda-cat.png"
+        },
+        "socialProfiles": {
+            "twitch": {
+                "userName": "theKalzad",
+                "userID": 24409212,
+                "clientID": "xrmtyevo2edce45tbw4ipti6a4vcz1",
+                "enabled": true
+            },
+            "instagram": {
+                "userName": "jasontmiani",
+                "enabled": true
+            },
+            "twitter": {
+                "userName": "@jasontmiani",
+                "enabled": true,
+                "url": "https://twitter.com/jtmiani",
+                "iconClassName": "fa fa-twitter"
+            },
+            "disqus": {
+                "disqusShortname": "broadcat",
+                "enabled": true
+            },
+            "facebook": {
+                "userEmail": "jasontmiani@gmail.com",
+                "fBAppID": "1825356251115265",
+                "enabled": true
+            },
+            "userLinks": [
+                {
+                    "label": "GitHub",
+                    "url": "https://github.com/jasontmiani/broadcat-site.git",
+                    "iconClassName": "fa fa-github"
+                },
+                {
+                    "label": "Twitter",
+                    "url": "https://twitter.com/jtmiani",
+                    "iconClassName": "fa fa-twitter"
+                },
+                {
+                    "label": "Email",
+                    "url": "jasontmiani@gmail.com",
+                    "iconClassName": "fa fa-envelope"
+                }
+            ]
+        }
+    }
+}
+

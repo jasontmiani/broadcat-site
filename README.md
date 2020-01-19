@@ -1,18 +1,36 @@
 # broadcat-site
-author: Jason Miani
 
+**Author:** Jason Miani
+
+## Todo List
+
+### Todo Items
+
+> [!IMPORTANT]
+>
+> -   set siteConfig.js values to variables. Data should come from .json file instead. This will allow the user > to set values in CMS and then push data to json file.
+> -   colorScheme.js accepts optional color choices. Otherwise, we use default options
+> -   Import gatsby-theme-apollo PageNav, Layout
+> -   Add GraphQL queries && Map GraphQL data to pages
+
+### Completed
+
+> [!]
+>
+> -   create color variables in colorScheme.js
+> -   create siteConfig.json example so I know how to structure my data
+> -   create working gatsby site
+> -   Configure Twitch Integration
+
+---
 
 ## webDev Environment Setup
 
-
 ### vscode
 
-
-- Install [Visual Studio Code](https://code.visualstudio.com/)
+-   Install [Visual Studio Code](https://code.visualstudio.com/)
 
 --> slightly different than Visual Studio. VSCode's extension library is massive. I'll send you my list.
-
-
 
 ### git
 
@@ -20,168 +38,131 @@ install [git](https://git-scm.com/)
 
 options:
 
-- add to path
+-   add to path
 
-- chocolatey (if win)
+-   chocolatey (if win)
 
-- *use recommended settings*
+-   _use recommended settings_
 
+//NOTE: \*\*vscode has git built in so you dont technically need but i highly recommend
 
-//NOTE: **vscode has git built in so you dont technically need but i highly recommend
-
-
-**setup global git config** 
+**setup global git config**
 
 [Git Tutorial & git config --global](https://www.atlassian.com/git/tutorials)
 
-
-
 ### nodejs, npm & yarn
 
-- install [node](https://nodejs.org/en/) 
+-   install [node](https://nodejs.org/en/)
 
- > python-based javascript runtime
- 
- **use lts or current**
+> python-based javascript runtime
 
-- install npm [npm aka node package manager](https://www.npmjs.com/)
+**use lts or current**
 
-  > npm is the redhot sauce of javascript. it does everything
+-   install npm [npm aka node package manager](https://www.npmjs.com/)
 
-- install [yarn](https://yarnpkg.com/lang/en/)
+    > npm is the redhot sauce of javascript. it does everything
 
- > this extends from npm and has same functionality as npm. required for many installs. its faster, easer to use, less security risks  **did i mention easier to use?**
- 
- 
- 
+-   install [yarn](https://yarnpkg.com/lang/en/)
+
+> this extends from npm and has same functionality as npm. required for many installs. its faster, easer to use, less security risks **did i mention easier to use?**
+
 ## Getting Started
-
 
 clone the github repo
 
+> \$ git clone https://github.com/jasontmiani/broadcat-site.git
 
- > $ git clone https://github.com/jasontmiani/broadcat-site.git
- 
+make a copy of the master branch so that you can break stuff.
 
-make a copy of the master branch so that you can break stuff. 
+> \$ git checkout -b some_branch_name
 
+this duplicated the og branch but just to be sure lets check
 
- > $ git checkout -b some_branch_name
- 
- 
-this duplicated the og branch but just to be sure lets check  
-
-
- > $ git status
- 
+> \$ git status
 
 commit changes
 
- > $ git commit -m "insert message"
- 
- 
- ill show you rest later. theres also info listed below
- 
+> \$ git commit -m "insert message"
 
+ill show you rest later. theres also info listed below
 
 #### **common npm/yarn usage examples**
 
-
 looks for package.json file and installs all dependencies
 
-> $ npm install
+> \$ npm install
 
-> $ yarn
+> \$ yarn
 
-> $ yarn install
-
+> \$ yarn install
 
 add a project dependency
 
+> \$ npm install react --save
 
-> $ npm install react --save
+> \$ yarn add react
 
-> $ yarn add react
+> \$ yarn install react
 
-> $ yarn install react
-
-
- 
 adds a dev dependency to the project
 
- 
-> $ npm i eslint --save-dev
+> \$ npm i eslint --save-dev
 
-> $ yarn add eslint --dev
-
-
+> \$ yarn add eslint --dev
 
 install a package globally
 
- 
-> $ npm install --global gatsby-cli
+> \$ npm install --global gatsby-cli
 
-> $ yarn add --global gatsby-cli
+> \$ yarn add --global gatsby-cli
 
-> $ yarn install --global gatsby-cli
-
+> \$ yarn install --global gatsby-cli
 
 **npx** (works with yarn & npm)
 
-
 creates a temporary react project bundled **probs wont use this**
 
+> \$ npx create-react-app my-app
 
-> $ npx create-react-app my-app
-
- 
 **npm scripts**
 
-*** each package.json file in workspace "/" has a scripts list so its important to read these ***
+**_ each package.json file in workspace "/" has a scripts list so its important to read these _**
 
 here's the most common script listed in package.json
 
 here's how to start gatsby in dev mode lol
 
+> \$ npm run-script dev
 
-> $ npm run-script dev
+> \$ npm dev
 
-> $ npm dev
+> \$ yarn develop
 
-> $ yarn develop
- 
-
-
- 
 ## docs & other Links
 
-- [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter)
+-   [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter)
 
-  - I chose this starter as it's bare bones --> it's much easier to add components to a project than to remove/replace components & variables IMO.
-  - Starter offers a ton of functionality but most importantly NetlifyCMS _content management system_ out of box, SEO configured pages, automatic pagination, and native [Netlify](https://www.netlify.com/) deploy. CI/CD through github.
+    -   I chose this starter as it's bare bones --> it's much easier to add components to a project than to remove/replace components & variables IMO.
+    -   Starter offers a ton of functionality but most importantly NetlifyCMS _content management system_ out of box, SEO configured pages, automatic pagination, and native [Netlify](https://www.netlify.com/) deploy. CI/CD through github.
 
-- [Gatsby Documentation](https://www.gatsbyjs.org/)
+-   [Gatsby Documentation](https://www.gatsbyjs.org/)
 
-  > Gatsby uses the latest & greatest tech to produce static websites. There are about 5 other major static site generators.
+    > Gatsby uses the latest & greatest tech to produce static websites. There are about 5 other major static site generators.
 
-  **Gatsby Benefits**
+    **Gatsby Benefits**
 
-  1. Statically generated html/css/js --> safe, secure, & fast af at very low cost <= \$1 per site (at scale of like 20+ sites; initially free.)
-  2. ReactJS for component modularity/flexibility. Dozens of design systems work with react --> in most instances we won't have to build components or configure css.
-  
-  3. GraphQL --> an alternative integration method to an API. ideal for SSGens.
-  
-  4. Gatsby plugins - preconfigured to do almost anything see [Gatsby Plugins](https://www.gatsbyjs.org/plugins/)
+    1. Statically generated html/css/js --> safe, secure, & fast af at very low cost <= \$1 per site (at scale of like 20+ sites; initially free.)
+    2. ReactJS for component modularity/flexibility. Dozens of design systems work with react --> in most instances we won't have to build components or configure css.
 
-- [ReactJS Documentation](https://reactjs.org/docs/hooks-intro.html)
+    3. GraphQL --> an alternative integration method to an API. ideal for SSGens.
 
-  - I linked the **hooks** _functional reactjs components_ documentation. React will stop using class-based components moving forward and working with functions is much easier IMO.
-  
-  - I'll show you how to use react via the Example.js component. Inline comments for dev tutorial. It's not that complicated and allows us to use design systems so we'll mostly have to think about integrating stuff not writing HTML/CSS
- 
+    4. Gatsby plugins - preconfigured to do almost anything see [Gatsby Plugins](https://www.gatsbyjs.org/plugins/)
 
+-   [ReactJS Documentation](https://reactjs.org/docs/hooks-intro.html)
 
+    -   I linked the **hooks** _functional reactjs components_ documentation. React will stop using class-based components moving forward and working with functions is much easier IMO.
 
+    -   I'll show you how to use react via the Example.js component. Inline comments for dev tutorial. It's not that complicated and allows us to use design systems so we'll mostly have to think about integrating stuff not writing HTML/CSS
 
 ---
 
@@ -223,59 +204,58 @@ If you are interested in a foundation for building ultra-fast websites, you can 
 
 ## Features
 
-- Gatsby v2 support
-- Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
-- Posts in Markdown
-  - Code syntax highlighting
-  - Embed YouTube videos
-  - Embed Tweets
-- Pagination
-  - Configurable via `SiteConfig.js`
-- Tags
-  - Separate page for posts under each tag
-- Categories
-  - Separate page for posts under each category
-- [Disqus](https://disqus.com/) support
-  - Notifications about new disqus comments
-- `/static/` and content folders are available to use with [gatsby-image](https://www.gatsbyjs.org/docs/gatsby-image/) out of the box for optimized image generation
-- High configurability
-- Separate components for everything:
-  - User social profiles
-  - Copyright information
-  - More!
-- [NetlifyCMS](https://www.netlifycms.org) support out of the box
-- PWA features
-  - Offline support
-  - Web App Manifest support
-  - Loading progress for slow networks
-- SEO
-  - [Google Analytics](https://marketingplatform.google.com/about/analytics/) support
-  - Sitemap generation
-  - robots.txt
-  - General description tags
-  - [Schema.org JSONLD (Google Rich Snippets)](https://schema.org/)
-  - [OpenGraph Tags (Facebook/Google+/Pinterest)](https://ogp.me/)
-  - [Twitter Tags (Twitter Cards)](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup)
-- RSS feeds
-- Social features
-  - Twitter tweet button
-  - Facebook share/share count
-  - Reddit share/share count
-  - LinkedIn share button
-  - Telegram share button
-- Development tools
-  - [ESLint](https://eslint.org/) for linting
-  - [Prettier](https://prettier.io/) for code formatting
-  - Remark-Lint for linting Markdown
-  - write-good for linting English prose
-  - gh-pages for deploying to GitHub pages
-  - [Netlify](https://www.netlify.com/) deploy configuration
-  - [CodeClimate](https://codeclimate.com/) configuration file and badge
+-   Gatsby v2 support
+-   Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
+-   Posts in Markdown
+    -   Code syntax highlighting
+    -   Embed YouTube videos
+    -   Embed Tweets
+-   Pagination
+    -   Configurable via `SiteConfig.js`
+-   Tags
+    -   Separate page for posts under each tag
+-   Categories
+    -   Separate page for posts under each category
+-   [Disqus](https://disqus.com/) support
+    -   Notifications about new disqus comments
+-   `/static/` and content folders are available to use with [gatsby-image](https://www.gatsbyjs.org/docs/gatsby-image/) out of the box for optimized image generation
+-   High configurability
+-   Separate components for everything:
+    -   User social profiles
+    -   Copyright information
+    -   More!
+-   [NetlifyCMS](https://www.netlifycms.org) support out of the box
+-   PWA features
+    -   Offline support
+    -   Web App Manifest support
+    -   Loading progress for slow networks
+-   SEO
+    -   [Google Analytics](https://marketingplatform.google.com/about/analytics/) support
+    -   Sitemap generation
+    -   robots.txt
+    -   General description tags
+    -   [Schema.org JSONLD (Google Rich Snippets)](https://schema.org/)
+    -   [OpenGraph Tags (Facebook/Google+/Pinterest)](https://ogp.me/)
+    -   [Twitter Tags (Twitter Cards)](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup)
+-   RSS feeds
+-   Social features
+    -   Twitter tweet button
+    -   Facebook share/share count
+    -   Reddit share/share count
+    -   LinkedIn share button
+    -   Telegram share button
+-   Development tools
+    -   [ESLint](https://eslint.org/) for linting
+    -   [Prettier](https://prettier.io/) for code formatting
+    -   Remark-Lint for linting Markdown
+    -   write-good for linting English prose
+    -   gh-pages for deploying to GitHub pages
+    -   [Netlify](https://www.netlify.com/) deploy configuration
+    -   [CodeClimate](https://codeclimate.com/) configuration file and badge
 
 NOTE: Feel free to check out [Gatsby Material Starter](https://github.com/Vagr9K/gatsby-material-starter) if you are interested in a more opinionated starter with Material Design in mind.
 
-
-```
+````
 
 ## Configuration
 
@@ -327,7 +307,7 @@ module.exports = {
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0" // Used for setting manifest background color.
 };
-```
+````
 
 If want to customize Netlify CMS, e.g. registering custom widgets or styling the preview pane, you can do so by editing `src/netlifycms/index.js`:
 
@@ -335,11 +315,11 @@ If want to customize Netlify CMS, e.g. registering custom widgets or styling the
 import CMS from "netlify-cms-app";
 
 CMS.init({
-  config: {
-    backend: {
-      name: "git-gateway"
+    config: {
+        backend: {
+            name: "git-gateway"
+        }
     }
-  }
 });
 ```
 
@@ -347,8 +327,8 @@ You can also optionally set `pathPrefix`:
 
 ```js
 module.exports = {
-  // Note: it must *not* have a trailing slash.
-  pathPrefix: "/gatsby-advanced-starter" // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
+    // Note: it must *not* have a trailing slash.
+    pathPrefix: "/gatsby-advanced-starter" // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
 };
 ```
 
