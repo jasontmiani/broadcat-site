@@ -1,5 +1,5 @@
 import React from "react";
-import config from "../../data/SiteConfig";
+import config from "./data/siteConfig";
 import breakpoints from "../utils/breakpoints";
 import styled from "@emotion/styled";
 import { Link } from "gatsby";

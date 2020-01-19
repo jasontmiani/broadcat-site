@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
-import config from "../../data/SiteConfig";
-import PageNav from "../../gatsby-theme-apollo/packages/gatsby-theme-apollo-core/src/components/page-nav";
+import config from "data/siteConfig";
+import NavBar from './'
 import "./index.css";
 import "./styles.less";
 
