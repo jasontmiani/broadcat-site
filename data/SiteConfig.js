@@ -46,6 +46,7 @@ const config = {
     copyright: "Copyright © 2019. Kalzad", // Copyright string for the footer of the website and RSS feed.
     themeColor: "#004972b8", // Used for setting manifest and progress theme colors.
     backgroundColor: "#e0e0e0" // Used for setting manifest background color.
+
 };
 
 // Validate

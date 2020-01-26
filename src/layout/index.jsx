@@ -1,9 +1,10 @@
 import React from "react";
 import Helmet from "react-helmet";
 import config from "data/siteConfig";
-import NavBar from './'
+import PageNav from "../../components/PageNav";
 import "./index.css";
 import "./styles.less";
+
 
 export default class MainLayout extends React.Component {
     render() {

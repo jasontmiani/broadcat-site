@@ -1,7 +1,8 @@
 const urljoin = require("url-join");
+const mapKeys = require("lodash/mapKeys");
 const path = require("path");
 const config = require("./data/SiteConfig");
-const defaultColorScheme = require("./data/colorScheme");
+const { colors } = require("./src/components/Utils/colorTheme");
 
 module.exports = {
     pathPrefix: config.pathPrefix === "" ? "/" : config.pathPrefix,
@@ -24,6 +25,31 @@ module.exports = {
         }
     },
     plugins: [
+        {
+            resolve: "gatsby-plugin-babel",
+            options: {
+                plugins: ["emotion", "babel-plugin-styled-components"]
+            }
+        },
+        {
+            resolve: "gatsby-plugin-eslint",
+            options: {
+                plugins: [
+                    "eslint-plugin-babel",
+                    "eslint-plugin-import",
+                    "eslint-plugin-jsx-a11y",
+                    "eslint-plugin-prettier",
+                    "eslint-plugin-react",
+                    "eslint-plugin-react-hooks"
+                ]
+            }
+        },
+        {
+            resolve: "gatsby-plugin-emotion",
+            options: {
+                // accepts all optsion from 'babel-plugin-emotion'
+            }
+        },
         "gatsby-plugin-react-helmet",
         {
             resolve: "gatsby-source-filesystem",
@@ -67,7 +93,7 @@ module.exports = {
         {
             resolve: "gatsby-plugin-nprogress",
             options: {
-                color: config.themeColor
+                color: colors.highlight3
             }
         },
         "gatsby-plugin-sharp",
@@ -82,8 +108,8 @@ module.exports = {
                 short_name: config.siteTitleShort,
                 description: config.siteDescription,
                 start_url: config.pathPrefix,
-                background_color: config.backgroundColor,
-                theme_color: config.themeColor,
+                background_color: colors.background,
+                theme_color: colors.primary,
                 display: "minimal-ui",
                 icons: [
                     {
@@ -191,14 +217,14 @@ module.exports = {
             }
         },
         {
-            resolve: `gatsby-source-instagram`,
+            resolve: "gatsby-source-instagram",
             options: {
-                type: `user-profile`,
+                type: "user-profile",
                 username: config.userInstagram
             }
         },
         {
-            resolve: `gatsby-source-twitch`,
+            resolve: "gatsby-source-twitch",
             options: {
                 userID: config.twitchUserID,
                 clientID: config.twitchClientID

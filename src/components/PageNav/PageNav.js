@@ -1,10 +1,12 @@
 import React from "react";
-import config from "./data/siteConfig";
 import breakpoints from "../utils/breakpoints";
 import styled from "@emotion/styled";
+import PropTypes from "prop-types";
+import { IconArrowLeft } from "@apollo/space-kit/icons/IconArrowLeft";
+import { IconArrowRight } from "@apollo/space-kit/icons/IconArrowRight";
 import { Link } from "gatsby";
-import { colors } from "../utils/colors";
-import { smallCaps } from "../utils/typography";
+import { colors } from "../../Utils/colorTheme";
+import { smallCaps } from "../../Utils/typography";
 
 const Container = styled.nav({
     display: "flex",

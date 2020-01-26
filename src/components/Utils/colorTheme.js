@@ -1,9 +1,9 @@
 const { colors } = require("@apollo/space-kit/colors");
 
 exports.colors = {
-    primary: colors.indigo.dark,
-    primaryLight: colors.indigo.lighter,
-    secondary: colors.pink.base,
+    primary: colors.grey.dark,
+    primaryLight: colors.silver.lighter,
+    secondary: colors.indigo.base,
     tertiary: colors.teal.dark,
     tertiaryLight: colors.teal.base,
     divider: colors.silver.dark,
@@ -13,15 +13,17 @@ exports.colors = {
     text2: colors.grey.dark,
     text3: colors.grey.light,
     text4: colors.silver.darker,
-    warning: colors.yellow.base,
+    warning: colors.red.light,
     shadow: colors.black.darker,
     highlight: colors.blue.base,
     highlight2: colors.blue.lighter,
-    highlight3: colors.blue.lightest,
+    highlight3: colors.teal.lightest,
     hoverOpacity: 0.8
 };
 
-exports.customizedColorScheme = {
+/* 
+//this will eventually handle accepting a json color object for each selection. or revert to default color scheme
+exports.customizedColorTheme = {
     primary: primaryThemeColor || colors.grey.dark,
     primaryLight: primaryLightColor || colors.silver.lighter,
     secondary: secondaryColor || colors.indigo.base,
@@ -41,3 +43,27 @@ exports.customizedColorScheme = {
     highlight3: highlight3Color || colors.blue.lightest,
     hoverOpacity: hoverOpacityColor || 0.8
 };
+
+const customizeTheme = siteConfig => {};
+
+const {
+    primaryThemeColor,
+    primaryLightColor,
+    secondaryColor,
+    tertiaryColor,
+    tertiaryLightColor,
+    dividerColor,
+    backgroundColor,
+    background2Color,
+    text1Color,
+    text2Color,
+    text3Color,
+    text4Color,
+    warningColor,
+    shadowColor,
+    highlightColor,
+    highlight2Color,
+    highlight3Color,
+    hoverOpacityColor
+} = customizeTheme;
+ */

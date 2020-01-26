@@ -11,8 +11,31 @@
             "siteRssPath": "../content/",
             "googleAnalyticsID": "UA-47311644-5"
         },
-        "copyright": "Copyright Â© 2019. Kalzad",
-        "themeColor": "#004972b8",
+        "copyright": "Copyright © 2019. Kalzad",
+        "themes": {
+            "colors": {
+                "primary": "grey.dark",
+                "primaryLight": "silver.lighter",
+                "secondary": "indigo.base",
+                "tertiary": "teal.dark",
+                "tertiaryLight": "teal.base",
+                "divider": "silver.dark",
+                "background": "silver.light",
+                "background2": "silver.base",
+                "text1": "black.lighter",
+                "text2": "grey.dark",
+                "text3": "grey.light",
+                "text4": "silver.darker",
+                "warning": "red.light",
+                "shadow": "black.darker",
+                "highlight": "blue.base",
+                "highlight2": "blue.lighter",
+                "highlight3": "teal.lightest",
+                "hoverOpacity": 0.8
+            },
+
+            "fonts": {}
+        },
         "backgroundColor": "#e0e0e0",
         "feedSettings": {
             "postDefaultCategoryID": "Feed",
@@ -112,4 +135,3 @@
         }
     }
 }
-
