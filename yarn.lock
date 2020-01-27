@@ -6347,10 +6347,10 @@ gatsby-plugin-tailwindcss@^1.0.3:
   dependencies:
     babel-plugin-tailwind-components "^0.5.10"
 
-gatsby-plugin-twitter@^2.1.9:
-  version "2.1.17"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.1.17.tgz#88292ed3212ca589b850d11b75721142db7fbcb9"
-  integrity sha512-rf9raVXzpLmMfM518F5vaC9yLL+rCZrrO9cG8Xub6Xsz1QrMmkuZgRCwhM4kXODr69OJkLNpJdEm6cgrb2+kWQ==
+gatsby-plugin-twitter@^2.1.18:
+  version "2.1.18"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.1.18.tgz#e908e9163bbfe6e86a1fce27ef36d941ae80b968"
+  integrity sha512-NI/RdjNuWdl+VK6f8IOQ3Bz8EW+z4TtipO/5SFWqCSdtLudF2OaMxOMLUuEvrlSeknXrIhjO8hjFOdyUFMlMZQ==
   dependencies:
     "@babel/runtime" "^7.7.6"
 
@@ -11835,7 +11835,7 @@ pretty-hrtime@^1.0.3:
   resolved "https://registry.yarnpkg.com/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   integrity sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
 
-prismjs@^1.19.0:
+prismjs@^1.16.0:
   version "1.19.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.19.0.tgz#713afbd45c3baca4b321569f2df39e17e729d4dc"
   integrity sha512-IVFtbW9mCWm9eOIaEkNyo2Vl4NnEifis2GQ7/MLRG5TQe6t+4Sj9J5QWI9i3v+SS43uZBlCAOn+zYTVYQcPXJw==
