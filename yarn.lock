@@ -8725,10 +8725,10 @@ jsdoc@^3.6.3:
     taffydb "2.6.2"
     underscore "~1.9.1"
 
-jsdom-quokka-plugin@^1.0.14:
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/jsdom-quokka-plugin/-/jsdom-quokka-plugin-1.0.14.tgz#8b7c366a8c6b95943f6a8f3636662b046f8a10f4"
-  integrity sha512-hXGnovdYvwOIKKHrquAqTf4IwkO4ZIdsCUN3V5fnIZa28gH9MbrFpmuFHfoh5y4X1Kf9/x0xMz6JBp0IrAvFQw==
+jsdom-quokka-plugin@^1.0.15:
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/jsdom-quokka-plugin/-/jsdom-quokka-plugin-1.0.15.tgz#a358de79fc7797b73404247bcca8bc4055a655ed"
+  integrity sha512-5Q8DdCNV9UtT1/S73xvPJeB0LIwUERs4i2mQn24wqSUZAhuOFNAzwBpv9DferMuDHP+OkNbzhLxKQVrZ9QH2yA==
   dependencies:
     jsdom "^13.1.0"
 
