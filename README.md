@@ -1,7 +1,7 @@
 # broadcat-site
 author: Jason Miani
 
-<img src="./profile-pic.png" alt="drawing" width="200"/>
+<img src="/static/logos/lambda-cat.png" alt="drawing" width="200"/>
 
 
 ## webDev Environment Setup
